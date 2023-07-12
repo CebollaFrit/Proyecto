@@ -12,7 +12,13 @@ function showLogInForm() {
 
 // Function to handle adding a new job placeholder
 function addJob() {
-  // Code to add job placeholder
+  const jobContainer = document.getElementById("job-container");
+  const jobInput = document.createElement("input");
+  jobInput.type = "text";
+  jobInput.className = "job-input";
+  jobInput.placeholder = "Job";
+  jobInput.required = true;
+  jobContainer.appendChild(jobInput);
 }
 
 // Function to handle form submission
